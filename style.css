@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ababab;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ababab;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ababab;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ababab;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #252525;
+    box-sizing: border-box;
+    font-size: 65.5%;
+    font-weight: 300;
+    background: #CE5F5F;
+    background: -webkit-linear-gradient(#CE5F5F, #E86E6E) fixed;
+    background: -o-linear-gradient(#CE5F5F, #E86E6E) fixed;
+    background: -moz-linear-gradient(#CE5F5F, #E86E6E) fixed;
+    background: linear-gradient(#CE5F5F, #E86E6E) fixed;
+}
+
+input,
+select {
+    width: 100%;
+}
+
+header h1 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+form h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label,
+.form-group span {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-group input,
+.form-group select {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #F2F2F2;
+}
+
+.radio-btn label {
+    text-align: center;
+    display: inline-block;
+    background: #F2F2F2;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100%/4 - 2px);
+}
+
+.radio-btn label:hover {
+    border: 1px solid rgba(221, 221, 221, 0.3);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .16);
+    background: #cacaca;
+}
+
+:checked+label {
+    border: 1px solid rgba(221, 221, 221, 0.3);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .16);
+    background: #cacaca;
+}
+
+.radio-btn input {
+    display: none;
+}
+
+.toppings-content {
+    display: inline-block;
+    width: calc(100%/2 - 2px);
+}
+
+.toppings-content input {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#btn {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: #5FCE7E;
+    color: #fdfdfd;
+    font-size: 1.6rem;
+}
+
+.order-details {
+    font-size: 2rem;
+}
+
+.order-title {
+    font-weight: 400;
+}

@@ -5,9 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatBot</title>
+    <h1>pizza-shop</h1>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <main>
+        <form>
+          <div class="form-content">
+            <h2>Lets Take Your Order</h2>
+            <!--  Name  -->
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Full Name" />
+            </div>
+            <!--  Size  -->
+            <div class="form-group">
+              <div class="radio-btn">
+                <span>Size</span>
+      
+                <input type="radio" name="size" id="small" value="small">
+                <label for="small">Small</label>
+      
+                <input type="radio" name="size" id="medium" value="medium">
+                <label for="medium">Medium</label>
+      
+                <input type="radio" name="size" id="large" value="large">
+                <label for="large">Large</label>
+      
+                <input type="radio" name="size" id="xlarge" value="xlarge">
+                <label for="xlarge">X-Large</label>
+              </div>
+            </div>
+            <!--  Base  -->
+            <div class="form-group">
+              <label for="base">Base</label>
+              <select id="base">
+                <option value="thin">Thin Crust</option>
+                <option value="orignial">Original</option>
+                <option value="deep">Deep Pan</option>
+                <option value="stuffed">Stuffed</option>
+              </select>
+            </div>
+            <!--  Toppings  -->
+            <div class="form-group">
+              <span>Toppings</span>
+              <div class="toppings-content">
+                <input type="checkbox" name="toppings" value="exCheese"> Extra Cheese<br />
+                <input type="checkbox" name="toppings" value="bacon">Bacon<br />
+                <input type="checkbox" name="toppings" value="beef">Beef<br />
+                <input type="checkbox" name="toppings" value="chicken">Chicken<br />
+                <input type="checkbox" name="toppings" value="jalapenños">Jalapenños<br />
+                <input type="checkbox" name="toppings" value="pepper">Mixed Pepper<br />
+              </div>
+              <div class="toppings-content">
+                <input type="checkbox" name="toppings" value="mushroom">Mushrooms<br />
+                <input type="checkbox" name="toppings" value="olives">Olives<br />
+                <input type="checkbox" name="toppings" value="pineapple">Pineapple <br />
+                <input type="checkbox" name="toppings" value="sweetcorn">Sweetcorn <br />
+                <input type="checkbox" name="toppings" value="tuna">Tuna <br />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" value="1" />
+            </div>
+          </div>
+          <button type="submit" id="btn">Place Order</button>
+        </form>
+      </main>
+      <source src="./pizza.js">
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger intent="WELCOME" chat-title="pizza-shop" agent-id="038c40a9-f45a-460c-84a1-cfb7b0c0ae1a"
         language-code="en"></df-messenger>
